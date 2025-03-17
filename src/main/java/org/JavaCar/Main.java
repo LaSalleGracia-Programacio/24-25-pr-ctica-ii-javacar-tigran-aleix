@@ -20,7 +20,16 @@ public class Main {
         vehicles.add(moto1);
         vehicles.add(furgoneta1);
 
-        
+
         double ingresos = GestorLloguers.calcularIngressosTotals(vehicles, 3);
         System.out.println("Ingresos totales por 3 días de alquiler: " + ingresos + "€");
+
+
+        
+        List<Vehicle> filtrats = GestorLloguers.filtrarPerPreu(vehicles, 30);
+        System.out.println("\nVehículos con precio base ≤ 30€:");
+        for (Vehicle v : filtrats) {
+            System.out.println(v.getMarca() + " " + v.getModel() + " - " + v.getPreuBase() + "€");
+        }
+
 
