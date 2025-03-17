@@ -8,7 +8,7 @@ public class Cotxe extends Vehicle {
         this.nombrePlaces = nombrePlaces;
     }
 
-    
+
     @Override
     public double calcularPreu(int dies) {
         return preuBase * dies;  // Precio total = precio base * número de días
