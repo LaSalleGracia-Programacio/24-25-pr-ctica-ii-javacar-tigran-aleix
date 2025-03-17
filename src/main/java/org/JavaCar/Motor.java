@@ -9,7 +9,7 @@ public class Motor {
         this.potencia = potencia;
     }
 
-    
+
     public String getTipus() { return tipus; }
     public int getPotencia() { return potencia; }
 }
