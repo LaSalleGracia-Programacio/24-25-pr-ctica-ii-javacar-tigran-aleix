@@ -14,8 +14,13 @@ public class Main {
         Moto moto1 = new Moto("5678XYZ", "Honda", "CBR600", 25.0, 600, motorGasolina, rodaPirelli);
         Furgoneta furgoneta1 = new Furgoneta("9101DEF", "Mercedes", "Sprinter", 50.0, 1200, motorElectrico, rodaMichelin);
 
-        
+
         List<Vehicle> vehicles = new ArrayList<>();
         vehicles.add(cotxe1);
         vehicles.add(moto1);
         vehicles.add(furgoneta1);
+
+        
+        double ingresos = GestorLloguers.calcularIngressosTotals(vehicles, 3);
+        System.out.println("Ingresos totales por 3 días de alquiler: " + ingresos + "€");
+
