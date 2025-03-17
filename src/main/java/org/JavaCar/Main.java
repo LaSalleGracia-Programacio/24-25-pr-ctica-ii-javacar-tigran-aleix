@@ -25,11 +25,23 @@ public class Main {
         System.out.println("Ingresos totales por 3 días de alquiler: " + ingresos + "€");
 
 
-        
+
         List<Vehicle> filtrats = GestorLloguers.filtrarPerPreu(vehicles, 30);
         System.out.println("\nVehículos con precio base ≤ 30€:");
         for (Vehicle v : filtrats) {
             System.out.println(v.getMarca() + " " + v.getModel() + " - " + v.getPreuBase() + "€");
         }
+
+
+        
+        System.out.println("\nDetalles de los vehículos:");
+        for (Vehicle v : vehicles) {
+            System.out.println(v.getMatricula() + " - " + v.getMarca() + " " + v.getModel() +
+                    " | Precio base: " + v.getPreuBase() + "€" +
+                    " | Etiqueta Ambiental: " + v.getEtiquetaAmbiental() +
+                    " | Precio por 3 días: " + v.calcularPreu(3) + "€");
+        }
+    }
+}
 
 
