@@ -8,7 +8,7 @@ public class Moto extends Vehicle {
         this.cilindrada = cilindrada;
     }
 
-    
+
     @Override
     public double calcularPreu(int dies) {
         double preuFinal = preuBase;
