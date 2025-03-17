@@ -8,7 +8,7 @@ public abstract class Vehicle implements Llogable {
     protected String etiquetaAmbiental; // Distintivo ambiental según normativa
 
 
-    
+
     public Vehicle(String matricula, String marca, String model, double preuBase, Motor motor, Roda rodes) {
         this.matricula = matricula;
         this.marca = marca;
@@ -18,3 +18,10 @@ public abstract class Vehicle implements Llogable {
         this.rodes = rodes;
         this.etiquetaAmbiental = calcularEtiquetaAmbiental();  // Calcula la etiqueta ambiental al crear el objeto
     }
+
+
+    private String calcularEtiquetaAmbiental() {
+        // Simulación de cálculo de etiqueta ambiental (puede ampliarse)
+        return "Etiqueta Estándar";
+    }
+
