@@ -33,7 +33,7 @@ public class Main {
         }
 
 
-        
+
         System.out.println("\nDetalles de los vehículos:");
         for (Vehicle v : vehicles) {
             System.out.println(v.getMatricula() + " - " + v.getMarca() + " " + v.getModel() +
