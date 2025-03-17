@@ -8,7 +8,7 @@ public class Furgoneta extends Vehicle {
         this.capacitatCarga = capacitatCarga;
     }
 
-    
+
     @Override
     public double calcularPreu(int dies) {
         double preuFinal = preuBase;
