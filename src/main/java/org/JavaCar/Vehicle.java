@@ -25,3 +25,10 @@ public abstract class Vehicle implements Llogable {
         return "Etiqueta Estándar";
     }
 
+    
+    public String getMatricula() { return matricula; }
+    public String getMarca() { return marca; }
+    public String getModel() { return model; }
+    public double getPreuBase() { return preuBase; }
+    public String getEtiquetaAmbiental() { return etiquetaAmbiental; }
+
