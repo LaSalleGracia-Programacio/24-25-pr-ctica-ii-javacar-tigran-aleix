@@ -9,5 +9,8 @@
         <module name="JavaCar" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="JavaCar" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
